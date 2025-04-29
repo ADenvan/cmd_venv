@@ -1,0 +1,32 @@
+
+
+> python --version /-v, 
+> where python  ,-Где путь к фаилу.
+> pip list  ,-какие пакеты установлены.
+> pip freeze ,-Какие пакеты мы устанавили.
+  > pip freeze > requirements.txt ,Создаем копию все мною установленых Пакетов
+  > pip install -r .\requirements.txt ,Установка покетов фаилам
+
+
+
+
+,,,Виртуальное окружение ,установка ,удаление
+> python -m venv venv ,Установка название папки иуть Окружения
+> rm .\venv\ ,Уданение Вирт-окружение
+> C:\Python312\python.exe -m venv venv ,Создание Вирт-Окружения по выбранному пути и версии.
+
+
+,,,Активировать.
+> .\venv\Scripts\activate ,Активировать виртуальное окружение 
+> deactivate ,Деактивировать Вирт-окружение.
+
+,,,На случий Ошибке.
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass ,Изменить политику выполнения только на время текущего терминала:  , Затем > \venv\Scripts\Activate.ps1
+
+,,,Постоянное решение (на всю систему или для пользователя) Изменить политику выполнения для пользователя навсегда:
+> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+,,,Для автоматического открывание виртуального окружение Устанавлеваем галочку.
+settings
+  Python > Terminal: Activate Env in Current Terminal
+

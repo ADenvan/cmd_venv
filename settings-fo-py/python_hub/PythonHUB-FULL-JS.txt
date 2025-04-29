@@ -1,0 +1,181 @@
+{
+    // отключить обновления расширений
+    "extensions.autoCheckUpdates": false,
+    // отключить фоновые обновления на Windows
+    "update.enableWindowsBackgroundUpdates": false,
+    // отключить автоматическое обновление расширений
+    "extensions.autoUpdate": false,
+    // не показывать примечания к выпуску после обновлений
+    "update.showReleaseNotes": false,
+    // полностью отключить обновления
+    "update.mode": "none",
+
+    // терминал
+
+    // стиль курсора терминала: "line" — вертикальная черта
+    "terminal.integrated.cursorStyle": "line",
+    // курсор в терминале мигает
+    "terminal.integrated.cursorBlinking": true,
+    // ширина курсора (актуально для блочного курсора)
+    "terminal.integrated.cursorWidth": 2,
+    // отключить кликабельные ссылки на файлы в терминале
+    "terminal.integrated.enableFileLinks": "off",
+    // количество строк в буфере прокрутки терминала
+    "terminal.integrated.scrollback": 50,
+    // терминал по умолчанию в Windows — командная строка (cmd)
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+    // редактор
+
+    // мини-карта (сбоку) отключена
+    "editor.minimap.enabled": false,
+    // использовать выделенный текст как строку поиска
+    "editor.find.seedSearchStringFromSelection": "selection",
+    // отключить поддержку специальных возможностей
+    "editor.accessibilitySupport": "off",
+    // не закрывать парные скобки при удалении
+    "editor.autoClosingDelete": "never",
+    // не заменять автоматически закрывающие скобки
+    "editor.autoClosingOvertype": "never",
+    // переход по определению открывается во встроенном просмотре (Peek)
+    "editor.definitionLinkOpensInPeek": true,
+    // задержка перед отображением всплывающей подсказки (в миллисекундах)
+    "editor.hover.delay": 100,
+    // отключить закруглённое выделение текста
+    "editor.roundedSelection": false,
+    // горизонтальная полоса прокрутки всегда видна
+    "editor.scrollbar.horizontal": "visible",
+    // вертикальная полоса прокрутки всегда видна
+    "editor.scrollbar.vertical": "visible",
+    // прокрутка по страницам, а не по строкам
+    "editor.scrollbar.scrollByPage": true,
+    // отключить подсветку других вхождений выделенного текста
+    "editor.selectionHighlight": false,
+    // отключить подсветку неоднозначных Unicode-символов
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    // не подсвечивать Unicode-символы внутри строк
+    "editor.unicodeHighlight.includeStrings": false,
+
+    // отладка
+
+    // автоматически разворачивать "ленивые" переменные
+    "debug.autoExpandLazyVariables": true,
+    // отображать значения переменных прямо в коде во время отладки
+    "debug.inlineValues": "on",
+    // очищать терминал перед повторным использованием
+    "debug.terminal.clearBeforeReusing": true,
+
+    // отключение или настройка ненужных функций
+
+    // скрыть командный центр в верхней панели
+    "window.commandCenter": false,
+    // при запуске редактор не открывает стартовую страницу
+    "workbench.startupEditor": "none",
+    // отключить авто-переход к файлу в проводнике
+    "explorer.autoReveal": false,
+    // отключить автоматическое сжатие вложенных папок в проводнике
+    "explorer.compactFolders": false,
+    // автосохранение файлов: "afterDelay" — через паузу
+    "files.autoSave": "afterDelay",
+    // отключить "хлебные крошки" — навигацию по структуре кода
+    "breadcrumbs.enabled": false,
+    // отключить автоматическую синхронизацию изменений в облаке
+    "workbench.cloudChanges.autoResume": "off",
+    "workbench.cloudChanges.continueOn": "off",
+    // отключить участие в экспериментах VS Code
+    "workbench.enableExperiments": false,
+    // при открытии быстрого поиска не закрывать его при потере фокуса
+    "workbench.quickOpen.closeOnFocusLost": false,
+    // отключить поиск настроек на естественном языке
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    // уменьшить высоту вкладок редактора
+    "window.density.editorTabHeight": "compact",
+    // отключить голосовую озвучку комментариев для специальных возможностей
+    "accessibility.verbosity.comments": false,
+    // представление результатов поиска в виде дерева
+    "search.defaultViewMode": "tree",
+    // отключить сбор телеметрии
+    "telemetry.telemetryLevel": "off",
+    // при переключении представлений закрывать детали расширений
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    // отключить индивидуальную синхронизацию клавиш на каждой платформе
+    "settingsSync.keybindingsPerPlatform": false,
+
+    // тема оформления
+
+    // цветовая тема "Monokai"
+    "workbench.colorTheme": "Monokai",
+    // уровень масштабирования интерфейса (1 = немного увеличен)
+    "window.zoomLevel": 1,
+
+    // Git
+
+    // обнаруживать репозитории Git только в подпапках
+    "git.autoRepositoryDetection": "subFolders",
+
+    // Настройка Pylance и анализа кода
+
+    // использовать Pylance в качестве сервера языка Python
+    "python.languageServer": "Pylance",
+    // отключить проверку типов (type checking)
+    "python.analysis.typeCheckingMode": "off",
+    // анализировать только открытые файлы
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    // автоматически находить пути к библиотекам
+    "python.analysis.autoSearchPaths": true,
+    // предлагать автодополнение для импортов
+    "python.analysis.autoImportCompletions": true,
+    // добавлять скобки при автодополнении функций
+    "python.analysis.completeFunctionParens": true,
+    // формат импорта: абсолютный путь
+    "python.analysis.importFormat": "absolute",
+    // включить индексирование кода
+    "python.analysis.indexing": true,
+
+    // уровень глубины индексации для конкретной библиотеки
+    "python.analysis.packageIndexDepths": [
+        {
+            // для библиотеки aiogram: глубина = 3, включать все символы
+            "name": "aiogram",
+            "depth": 3,
+            "includeAllSymbols": true
+        }
+        // можно добавить аналогично другие библиотеки, например:
+        // {
+        //     "name": "django",
+        //     "depth": 3,
+        //     "includeAllSymbols": true
+        // }
+    ],
+
+    // для Python: форматтер по умолчанию — black (от Microsoft)
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
+
+    // Ниже закомментированы настройки для Django-проектов:
+
+    // включить поддержку Emmet в шаблонах Django
+    // "emmet.includeLanguages": {
+    //     "django-html": "html"
+    // },
+
+    // указать, как обрабатывать .html-файлы в шаблонах
+    // "files.associations": {
+    //     "**/*.html": "html",
+    //     "**/templates/*/*.html": "django-html",
+    //     "**/templates/*/*/*.html": "django-html",
+    //     "**/templates/*": "django-html",
+    //     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    // },
+
+    // настройки для django-html:
+    // "[django-html]": {
+    //     "breadcrumbs.showClasses": true,
+    //     "editor.quickSuggestions": {
+    //         "other": true,
+    //         "comments": true,
+    //         "strings": true
+    //     }
+    // }
+}

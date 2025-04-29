@@ -1,0 +1,55 @@
+{
+    // Отключить автоматическую проверку обновлений для расширений
+    "extensions.autoCheckUpdates": false,
+
+    // Отключить фоновые обновления на Windows
+    "update.enableWindowsBackgroundUpdates": false,
+
+    // Отключить автоматическое обновление расширений
+    "extensions.autoUpdate": false,
+
+    // Не показывать примечания к релизам после обновлений
+    "update.showReleaseNotes": false,
+
+    // Полностью отключить механизм обновлений
+    "update.mode": "none",
+
+    // Включить отображение значений переменных прямо в коде при отладке
+    "debug.inlineValues": "on",
+
+    // Автоматически раскрывать "ленивые" переменные при отладке
+    "debug.autoExpandLazyVariables": true,
+
+    // Отключить мини-карту кода справа
+    "editor.minimap.enabled": false,
+
+    // Установить цветовую тему редактора: Monokai
+    "workbench.colorTheme": "Monokai",
+
+    // Установить стиль курсора в терминале: вертикальная линия
+    "terminal.integrated.cursorStyle": "line",
+
+    // Включить мигание курсора в терминале
+    "terminal.integrated.cursorBlinking": true,
+
+    // Отключить командный центр в верхней панели
+    "window.commandCenter": false,
+
+    // Не показывать стартовый экран при запуске VS Code
+    "workbench.startupEditor": "none",
+
+    // Включить автосохранение файлов после небольшой задержки
+    "files.autoSave": "afterDelay",
+
+    // Отключить автоматическое выделение открытых файлов в проводнике
+    "explorer.autoReveal": false,
+
+    // Отключить компактное отображение вложенных папок в проводнике
+    "explorer.compactFolders": false,
+
+    // Отключить навигационную строку "хлебные крошки"
+    "breadcrumbs.enabled": false,
+
+    // Использовать "Command Prompt" (cmd) как терминал по умолчанию в Windows
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}

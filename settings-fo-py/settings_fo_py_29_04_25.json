@@ -1,0 +1,65 @@
+{
+    // Прозрачность интерфейса расширения GlassIt (255 — полностью непрозрачный)
+    "glassit.alpha": 255,
+
+    // Показывать стрелки в проводнике для сворачивания/разворачивания — выключено
+    "symbols.hidesExplorerArrows": false,
+
+    // Вертикальная линейка на 99 символе — удобно для контроля длины строки кода
+    "editor.rulers": [
+        99
+    ],
+
+    // Цветовая тема редактора: "Default Dark+" — тёмная тема по умолчанию
+    "workbench.colorTheme": "Default Dark+",
+
+    // Форматировать код автоматически при сохранении файла
+    "editor.formatOnSave": true,
+
+    // Для файлов JavaScript:
+    "[javascript]": {
+        // Форматтер по умолчанию — расширение bysabi.prettier-vscode-standard
+        "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+    },
+
+    // Для файлов JavaScript React (JSX):
+    "[javascriptreact]": {
+        // Форматтер по умолчанию — расширение esbenp.prettier-vscode
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Автоматически получать изменения из репозиториев Git
+    "git.autofetch": true,
+
+}
+
+///////////// ArDen pc
+{
+    // Уровень телеметрии: "off" — полностью отключена отправка данных
+    "telemetry.telemetryLevel": "off",
+    
+    // Автосохранение файлов: "afterDelay" — после небольшой задержки
+    "files.autoSave": "afterDelay",
+
+    // Иконки в проводнике от темы "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+
+    // Для файлов Python:
+    "[python]": {
+        // Автоформатирование при наборе кода (например, после двоеточия)
+        "editor.formatOnType": true
+    },
+
+    // Отображение пробелов и табуляций: "boundary" — только в начале и конце слов
+    "editor.renderWhitespace": "boundary",
+    // Перенос строк включён (если строка слишком длинная, она переносится на следующую)
+    "editor.wordWrap": "on",
+    // Размер табуляции: 2 пробела
+    "editor.tabSize": 4,
+    // Мини-карта (миниатюра кода справа) отключена
+    "editor.minimap.enabled": false,
+
+    // Курсор 
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on"
+}
