@@ -3,10 +3,11 @@
 > python --version /-v, 
 > where python  ,-Где путь к фаилу.
 > pip list  ,-какие пакеты установлены.
+> pip uninstall lxml -y ,Удаление пакета
+
 > pip freeze ,-Какие пакеты мы устанавили.
   > pip freeze > requirements.txt ,Создаем копию все мною установленых Пакетов
   > pip install -r .\requirements.txt ,Установка покетов фаилам
-
 
 
 
@@ -26,7 +27,7 @@
 ,,,Постоянное решение (на всю систему или для пользователя) Изменить политику выполнения для пользователя навсегда:
 > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
-,,,Для автоматического открывание виртуального окружение Устанавлеваем галочку. Будес создан js file.
+,,,Для автоматического открывание виртуального окружение Устанавлеваем галочку. Будес создан js file
 settings
   Python > Terminal: Activate Env in Current Terminal
 
