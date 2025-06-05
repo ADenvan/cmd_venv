@@ -1,0 +1,104 @@
+
+,,,Вариант 1: Удаление с помощью git filter-repo (рекомендуется) Убедись что установлен git-filter-repo:
+
+
+pip install git-filter-repo
+
+git filter-repo --path Parsing-Scraping/baza_knig_API/creds.json --invert-paths ,Удали файл из истории:
+git push origin main --force ,Затем сделай force push:
+
+
+,,,Вариант 2: Удаление файла и повтор коммита (если фильтр не установлен)
+git rm --cached Parsing-Scraping/baza_knig_API/creds.json , Удали файл:
+
+echo Parsing-Scraping/baza_knig_API/creds.json >> .gitignore ,Добавь .gitignore чтобы исключить этот файл в будущем:
+
+git add .gitignore
+git commit -m "Удалён файл с секретами и добавлен в .gitignore" ,Закоммить:
+
+
+,,,✅ 1. Пример .gitignore Создай или обнови файл .gitignore в корне проекта:
+
+# Секреты и конфиденциальные данные
+*.env
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+*.pfx
+*.keystore
+
+# Файлы с ключами и учётными данными
+creds.json
+secrets.json
+config/secret_config.json
+Parsing-Scraping/baza_knig_API/creds.json
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Python-артефакты
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+.venv/
+build/
+dist/
+
+
+,,,⚙️ 2. Скрипт clean_secrets.bat (для Windows/Visual Studio) Сохрани этот код в файл clean_secrets.bat в корне проекта:
+
+@echo off
+echo ================================================
+echo Удаление файла с секретом из Git-репозитория...
+echo ================================================
+
+REM Удаляем файл из индекса, но не с диска
+git rm --cached Parsing-Scraping/baza_knig_API/creds.json
+
+REM Добавим .gitignore, если его нет
+IF NOT EXIST ".gitignore" (
+    echo .gitignore не найден. Создаю .gitignore...
+    echo Parsing-Scraping/baza_knig_API/creds.json > .gitignore
+) ELSE (
+    echo Parsing-Scraping/baza_knig_API/creds.json>>.gitignore
+)
+
+REM Коммитим изменения
+git add .gitignore
+git commit -m "Удалён файл creds.json с секретами и добавлен в .gitignore"
+
+echo ================================================
+echo Если файл уже был в истории — очищаем историю...
+echo ================================================
+echo Убедитесь, что установлен git-filter-repo
+echo Нажмите любую клавишу для продолжения...
+pause
+
+REM Очищаем историю (нужно установить git-filter-repo отдельно)
+git filter-repo --path Parsing-Scraping/baza_knig_API/creds.json --invert-paths
+
+echo ================================================
+echo История очищена. Выполняется force push...
+echo ================================================
+git push origin main --force
+
+echo ================================================
+echo ✅ Завершено. Секрет удалён.
+pause
+
+,,,📥 Как использовать:
+Сохрани .gitignore в корне проекта.
+
+Сохрани clean_secrets.bat в том же каталоге.
+
+Дважды кликни на clean_secrets.bat или запусти из Visual Studio в терминале:
+
+./clean_secrets.bat
