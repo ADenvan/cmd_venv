@@ -1,4 +1,15 @@
 
+Изминения виртуального окружения Wind вручнкю.
+wind+r
+sysdm.cpl
+    переменные среды
+        Системные переменные
+        path
+            Изменить
+            Двлее выбераем пути для изминения.
+            C:\Program Files\Python313\Scripts\
+            C:\Program Files\Python313\
+-----------------------------------------
 
 > python --version /-v, 
 > where python  ,-Где путь к фаилу.
@@ -7,10 +18,10 @@
 
 > pip freeze ,-Какие пакеты мы устанавили.
   > pip freeze > requirements.txt ,Создаем копию все мною установленых Пакетов
-  > pip install -r .\requirements.txt ,Установка покетов фаилам
+  > pip install -r .\requirements.txt ,Установка покетов фаилам из фаила
 
 
-
+-----------------------------------------
 ,,,Виртуальное окружение ,установка ,удаление
 > python -m venv venv ,Установка название папки иуть Окружения
 > rm .\venv\ ,Уданение Вирт-окружение
@@ -18,9 +29,17 @@
 
 
 ,,,Активировать.
-> .\venv\Scripts\activate ,Активировать виртуальное окружение 
+> .\venv\Scripts\activate.ps1 ,Активировать виртуальное окружение 
 > deactivate ,Деактивировать Вирт-окружение.
 
+,,,Виртуального окружения с определенной версией Python
+> C:\Python313\python.exe -m venv .venv
+
+,,,Инсталляция виртуального окружения с определенной версией Python необходимо пронсталировать дополнительную библиотеку pip install virtualenv
+> python -m virtualenv -p "C:\Program Files\Python313\python.exe"  my_second_env
+
+
+-----------------------------------------
 ,,,На случий Ошибке.
 > Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass ,Изменить политику выполнения только на время текущего терминала:  , Затем > \venv\Scripts\Activate.ps1
 
@@ -31,3 +50,7 @@
 settings
   Python > Terminal: Activate Env in Current Terminal
 
+
+,,, Выбор или создания интерпритатора в vsCode
+> python: select interpreter
+> python: create enverment

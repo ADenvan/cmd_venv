@@ -42,7 +42,7 @@
     // стиль курсора терминала: "line" — вертикальная черта
     "terminal.integrated.cursorStyle": "line",
     // курсор в терминале мигает
-    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorBlinking": true
 
 
     // Форматировать код автоматически при сохранении файла

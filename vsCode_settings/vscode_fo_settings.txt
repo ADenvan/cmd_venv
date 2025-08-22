@@ -1,0 +1,76 @@
+
+---------------------------------------------------
+    22.08.2025  На бомашней ПК
+    
+{
+    "window.zoomLevel": 1,
+
+    // Уровень телеметрии: "off" — полностью отключена отправка данных
+    "telemetry.telemetryLevel": "off",
+    
+    // Автосохранение файлов: "afterDelay" — после небольшой задержки
+    "files.autoSave": "afterDelay",
+
+    // Курсор изминение
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    // Отображение пробелов и табуляций: "boundary" — только в начале и конце слов
+    "editor.renderWhitespace": "boundary",
+
+    // Размер табуляции: 2 пробела
+    "editor.tabSize": 4,
+    // Перенос строк включён (если строка слишком длинная, она переносится на следующую)
+    "editor.wordWrap": "on",
+    
+
+    // --------------------------------------------------
+    // стиль курсора терминала: "line" — вертикальная черта
+    "terminal.integrated.cursorStyle": "line",
+    // курсор в терминале мигает
+    "terminal.integrated.cursorBlinking": true,
+
+
+    // --------------------------------------------------
+    // Языковой сервер. Добавлен из разширения.
+    "python.languageServer": "Pylance",
+
+    // Jupyter Notebooks: Необходимо для работы раширения Ruff АвтоСохранение. 
+    "notebook.formatOnSave.enabled": true,
+
+    // Для файлов Python:
+    "[python]": {
+        // Автоформатирование при наборе кода (например, после двоеточия)
+        "editor.formatOnType": true,
+
+
+        // Ruff--------------------------------------------------
+        // при сохранении, включив действие
+        "editor.formatOnSave": true,
+        // назначив Ruff средством форматирования по умолчанию:
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+
+    // --------------------------------------------------
+    // vs Code icons
+    "workbench.iconTheme": "vscode-icons",
+    "database-client.autoSync": true
+
+
+}
+
+---------------------------------------------------
+        29. 04. 2025 ?
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "explorer.autoReveal": false,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line"
+
+}
