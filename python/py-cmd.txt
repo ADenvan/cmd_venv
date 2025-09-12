@@ -1,6 +1,0 @@
-
-
-
-
--- Обновление pip 
-> python.exe -m pip install --upgrade pip 

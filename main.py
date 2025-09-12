@@ -9,8 +9,8 @@ python_version = sys.version
 
 
 def main():
-    
-    return requests.get(url="https://google.com")
+    respons = requests.get(url="https://google.com")
+    return respons
 
 
 # В терминал .\main.py

@@ -1,13 +1,58 @@
 
+
+
+---------------------------------------------------
+  От чата GPT
+{
+  // --- Общий стиль редактора ---
+  "editor.tabSize": 4,                      // размер таба — 4 пробела
+  "editor.insertSpaces": true,              // таб = пробелы
+  "editor.detectIndentation": false,        // не подстраиваться под чужие файлы
+  "editor.wordWrap": "on",                  // перенос строк по ширине экрана
+  "editor.minimap.enabled": false,          // отключить мини-карту для чистоты
+
+  // --- Скобки и автоформатирование ---
+  "editor.autoClosingBrackets": "always",   // авто-закрытие скобок
+  "editor.autoClosingQuotes": "always",     // авто-закрытие кавычек
+  "editor.bracketPairColorization.enabled": true,  // подсветка парных скобок
+  "editor.guides.bracketPairs": "active",   // линии между парными скобками
+  "editor.formatOnSave": true,              // автоформат при сохранении
+  "editor.formatOnPaste": true,             // автоформат при вставке
+
+  // --- Навигация ---
+  "breadcrumbs.enabled": true,              // включить breadcrumbs (крошки для функций/классов)
+  "explorer.confirmDelete": false,          // удаление без подтверждения
+  "workbench.editor.enablePreview": false,  // не открывать файлы в preview-режиме
+  "workbench.editor.highlightModifiedTabs": true, // подсвечивать изменённые файлы
+
+  // --- Подсветка и стиль кода ---
+  "files.trimTrailingWhitespace": true,     // обрезать пробелы в конце строки
+  "files.insertFinalNewline": true,         // добавлять пустую строку в конец файла
+  "files.autoSave": "afterDelay",           // авто-сохранение
+  "files.autoSaveDelay": 1500,              // задержка 1.5 сек
+  "diffEditor.ignoreTrimWhitespace": false, // подсвечивать изменения даже в пробелах
+
+  // --- Языковые настройки ---
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
+
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
 ---------------------------------------------------
     22.08.2025  На бомашней ПК
-    
+
 {
     "window.zoomLevel": 1,
 
     // Уровень телеметрии: "off" — полностью отключена отправка данных
     "telemetry.telemetryLevel": "off",
-    
+
     // Автосохранение файлов: "afterDelay" — после небольшой задержки
     "files.autoSave": "afterDelay",
 
@@ -22,8 +67,46 @@
     "editor.tabSize": 4,
     // Перенос строк включён (если строка слишком длинная, она переносится на следующую)
     "editor.wordWrap": "on",
-    
 
+    // Изминения шрифта строк Вертикальная линейка на 99 символе — удобно для контроля длины строки кода
+    "editor.fontFamily": "YOUR FONT, Menlo, Monaco, 'Courier New', monospace"
+
+    // Изминения шрифта строк
+    // === Шрифты ===
+    "editor.fontFamily": "YOUR FONT, Menlo, Monaco, 'Courier New', monospace",
+    // "editor.fontFamily": "Fira Code, JetBrains Mono, Cascadia Code, Source Code Pro, Consolas, monospace",
+    "editor.fontSize": 14,            // Оптимальный размер для глаз
+    "editor.lineHeight": 22,          // Чуть больше интерлиньяж для читабельности
+    "editor.letterSpacing": 0.5,      // Лёгкое увеличение расстояния между символами
+
+    // === Лигатуры ===
+    "editor.fontLigatures": true,     // Красивые спец. символы (->, ===, && и т.д.)
+
+    // === Сглаживание ===
+    "editor.fontWeight": "normal",    // Базовый вес шрифта
+    "editor.smoothScrolling": true,   // Плавная прокрутка
+
+        // === Цвет текста в редакторе ===
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "source", // общий текст (весь код)
+        "settings": {
+          "foreground": "#E06C75" // любой HEX-цвет (например, красноватый)
+        }
+      },
+      {
+        "scope": "string", // именно строки (в кавычках)
+        "settings": {
+          "foreground": "#8479c3" // зелёный
+        }
+      }
+    ]}
+  }
+
+
+    // --------------------------------------------------
+    // --------------------------------------------------
     // --------------------------------------------------
     // стиль курсора терминала: "line" — вертикальная черта
     "terminal.integrated.cursorStyle": "line",
@@ -35,7 +118,7 @@
     // Языковой сервер. Добавлен из разширения.
     "python.languageServer": "Pylance",
 
-    // Jupyter Notebooks: Необходимо для работы раширения Ruff АвтоСохранение. 
+    // Jupyter Notebooks: Необходимо для работы раширения Ruff АвтоСохранение.
     "notebook.formatOnSave.enabled": true,
 
     // Для файлов Python:

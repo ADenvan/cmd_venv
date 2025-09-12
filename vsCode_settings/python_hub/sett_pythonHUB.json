@@ -1,4 +1,4 @@
-{
+HUB = {
     // отключить обновления расширений
     "extensions.autoCheckUpdates": false,
     // отключить фоновые обновления на Windows

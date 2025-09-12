@@ -1,0 +1,177 @@
+pc = [
+    {
+    "window.zoomLevel": 1,
+
+
+    "telemetry.telemetryLevel": "off", // Уровень телеметрии: "off" — полностью отключена отправка данных
+
+
+    "files.autoSave": "afterDelay", // Автосохранение файлов: "afterDelay" — после небольшой задержки
+
+    // --------------------------------------------------
+    // === Курсор изминение
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+
+
+    // ===-----------------------------------------------
+    // === Скобки -- пробел -- табуля -- Перенос строк
+    "editor.renderWhitespace": "boundary", // Отображение пробелов и табуляций: "boundary"
+    "editor.tabSize": 4, // Размер табуляции: 4 пробела
+    "editor.wordWrap": "on", // Перенос строк включён
+    "diffEditor.ignoreTrimWhitespace": false, // подсвечивать изменения даже в пробелах
+    "files.trimTrailingWhitespace": true, // обрезать пробелы в конце строки
+
+    // "editor.bracketPairColorization.enabled": true, // подсветка пар скобок — если хотите цветные связи скобок
+    // "editor.guides.bracketPairs": "active", // линии между парными скобками
+
+
+    // --------------------------------------------------
+    // === Tерминал
+    // стиль курсора терминала: "line" — вертикальная черта
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true, // курсор в терминале мигает
+
+
+
+    // --------------------------------------------------
+    // === pythonIndent
+    // Если false → придётся самому управлять отступами до закрывающей ].
+    // Если true → можно нажать Tab, и курсор сразу выровняется под закрывающую скобку.
+    // "pythonIndent.useTabOnHangingIndent": true,
+    "pythonIndent.keepHangingBracketOnLine": false, // Если true, то при создании висячего отступа закрывающая скобка не переносится на отдельную строку,
+
+
+
+    // --------------------------------------------------
+    // === python
+    // Языковой сервер. Добавлен из разширения.
+    "python.languageServer": "Pylance",
+
+    // Jupyter Notebooks: Необходимо для работы раширения Ruff АвтоСохранение.
+    "notebook.formatOnSave.enabled": true,
+
+    // Для файлов Python:
+    "[python]": {
+        "editor.formatOnType": true, // Автоформатирование при наборе кода (например, после двоеточия)
+
+        // --------------------------------------------------
+        // === Ruff
+        "editor.formatOnSave": true, // при сохранении, включив действие
+        "editor.defaultFormatter": "charliermarsh.ruff", // назначив Ruff средством форматирования по умолчанию:
+
+    },
+
+
+
+
+    // --------------------------------------------------
+    // vs Code icons
+    "workbench.iconTheme": "vscode-icons",
+    "database-client.autoSync": true,
+    "editor.accessibilitySupport": "off",
+
+
+
+
+    // --------------------------------------------------
+    // Правила для ИИ моделий
+    "roo-cline.allowedCommands": [
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "roo-cline.deniedCommands": [],
+
+
+
+    // --------------------------------------------------
+    // Изминения шрифта строк
+    // === Шрифты ===
+    "editor.fontFamily": "YOUR FONT, Menlo, Monaco, 'Courier New', monospace",
+    // "editor.fontFamily": "Fira Code, JetBrains Mono, Cascadia Code, Source Code Pro, Consolas, monospace",
+    "editor.fontSize": 14,            // Оптимальный размер для глаз
+    "editor.lineHeight": 22,          // Чуть больше интерлиньяж для читабельности
+    "editor.letterSpacing": 0.5,      // Лёгкое увеличение расстояния между символами
+
+    // === Лигатуры ===
+    "editor.fontLigatures": true,     // Красивые спец. символы (->, ===, && и т.д.)
+
+    // === Сглаживание ===
+    "editor.fontWeight": "normal",    // Базовый вес шрифта
+    "editor.smoothScrolling": true,   // Плавная прокрутка
+
+
+
+    // --------------------------------------------------
+    // === Цвет текста в редакторе ===
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "source", // общий текст (весь код)
+                "settings": {
+                    "foreground": "#E06C75" // любой HEX-цвет (например, красноватый)
+                }
+            },
+            {
+                "scope": "string", // именно строки (в кавычках)
+                "settings": {
+                    "foreground": "#8479c3" // зелёный
+                }
+            }
+        ]
+    },
+    "workbench.editorAssociations": {
+        "*.sqlite3": "default"
+    },
+
+
+    // --------------------------------------------------
+    // === activeBackground — главные ключи. Если хотите — меняем HEX-цвета под вашу тему.
+      // включаем вертикальные направляющие и подсветку активной
+    "editor.guides.indentation": true,
+    "editor.guides.highlightActiveIndentation": true,
+
+    // цвета -> workbench.colorCustomizations
+    "workbench.colorCustomizations": {
+        // основной (неактивный) цвет направляющих
+        "editorIndentGuide.background": "#555555",
+
+        // активная линия (где курсор)
+        "editorIndentGuide.activeBackground": "#FF9800",
+
+        // дополнительные цвета для глубины (уровней вложенности)
+        "editorIndentGuide.background1": "#3c3c3c",
+        "editorIndentGuide.background2": "#343434",
+        "editorIndentGuide.background3": "#2b2b2b",
+
+        // активные аналоги для разных уровней (опционально)
+        "editorIndentGuide.activeBackground1": "#ffb74d",
+        "editorIndentGuide.activeBackground2": "#ffcc80"
+    }
+
+
+
+
+
+
+
+    // --------------------------------------------------
+        // === Шрифты (приоритет Cascadia Code) ===
+    // "editor.fontFamily": "Cascadia Code, Fira Code, JetBrains Mono, Source Code Pro, Consolas, monospace",
+    // "editor.fontSize": 15,            // Чуть крупнее для удобства
+    // "editor.lineHeight": 24,          // Просторный интерлиньяж
+    // "editor.letterSpacing": 0.3,      // Лёгкий баланс между символами
+
+    // // === Лигатуры ===
+    // "editor.fontLigatures": true,     // Cascadia Code отлично смотрится с лигатурами
+
+    // // === Сглаживание ===
+    // "editor.fontWeight": "normal",
+    // "editor.smoothScrolling": true,
+    // "workbench.fontAliasing": "antialiased"
+
+}
+]
+
