@@ -1,17 +1,19 @@
-pc = [
-    {
-    "window.zoomLevel": 1,
-
-
+pc = {
+    "window.zoomLevel": 1, // увеличивает всю UI, в том числе Explorer
     "telemetry.telemetryLevel": "off", // Уровень телеметрии: "off" — полностью отключена отправка данных
-
-
     "files.autoSave": "afterDelay", // Автосохранение файлов: "afterDelay" — после небольшой задержки
+
 
     // --------------------------------------------------
     // === Курсор изминение
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": "on",
+
+
+    // ===-----------------------------------------------
+    // === Ширина отступа у папок
+    "workbench.tree.indent": 16, // ширина отступа у папок (по умолчанию 8–16)
+    "workbench.tree.renderIndentGuides": "onHover", // подсветка направляющих
 
 
 
@@ -25,6 +27,7 @@ pc = [
 
     // "editor.bracketPairColorization.enabled": true, // подсветка пар скобок — если хотите цветные связи скобок
     // "editor.guides.bracketPairs": "active", // линии между парными скобками
+
 
 
     // --------------------------------------------------
@@ -65,7 +68,6 @@ pc = [
 
 
 
-
     // --------------------------------------------------
     // vs Code icons
     "workbench.iconTheme": "vscode-icons",
@@ -91,16 +93,16 @@ pc = [
     // === Шрифты ===
     "editor.fontFamily": "YOUR FONT, Menlo, Monaco, 'Courier New', monospace",
     // "editor.fontFamily": "Fira Code, JetBrains Mono, Cascadia Code, Source Code Pro, Consolas, monospace",
-    "editor.fontSize": 14,            // Оптимальный размер для глаз
-    "editor.lineHeight": 22,          // Чуть больше интерлиньяж для читабельности
-    "editor.letterSpacing": 0.5,      // Лёгкое увеличение расстояния между символами
+    "editor.fontSize": 14, // Оптимальный размер для глаз
+    "editor.lineHeight": 22, // Чуть больше интерлиньяж для читабельности
+    "editor.letterSpacing": 0.5, // Лёгкое увеличение расстояния между символами
 
     // === Лигатуры ===
-    "editor.fontLigatures": true,     // Красивые спец. символы (->, ===, && и т.д.)
+    "editor.fontLigatures": true, // Красивые спец. символы (->, ===, && и т.д.)
 
     // === Сглаживание ===
-    "editor.fontWeight": "normal",    // Базовый вес шрифта
-    "editor.smoothScrolling": true,   // Плавная прокрутка
+    "editor.fontWeight": "normal", // Базовый вес шрифта
+    "editor.smoothScrolling": true, // Плавная прокрутка
 
 
 
@@ -173,5 +175,3 @@ pc = [
     // "workbench.fontAliasing": "antialiased"
 
 }
-]
-

@@ -1,0 +1,65 @@
+{
+    "window.zoomLevel": 1,
+    "telemetry.telemetryLevel": "off",
+    "files.autoSave": "afterDelay",
+    // --------------------------------------------------
+    // === Курсор изминение
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+
+    // --------------------------------------------------
+    // === Tерминал
+    // стиль курсора терминала: "line" — вертикальная черта
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+
+    "python.languageServer": "None",
+    "notebook.formatOnSave.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // --------------------------------------------------
+    // vs Code icons
+    "workbench.iconTheme": "vscode-icons",
+    "database-client.autoSync": true,
+    "editor.accessibilitySupport": "off",
+
+    // Проверка ошибок.
+    "cSpell.language": "en,ru",
+    "ltex.language": "ru-RU",
+    // "cSpell.enabled": true,
+    // // чтобы проверяло только текст, а не имена переменных
+    // "cSpell.checkInString": true,
+    // "cSpell.checkInComments": true
+
+    // --------------------------------------------------
+    // === activeBackground — главные ключи. Если хотите — меняем HEX-цвета под вашу тему.
+        // включаем вертикальные направляющие и подсветку активной
+    "editor.guides.indentation": true,
+    "editor.guides.highlightActiveIndentation": true,
+
+    // цвета -> workbench.colorCustomizations
+    "workbench.colorCustomizations": {
+        // основной (неактивный) цвет направляющих
+        "editorIndentGuide.background": "#555555",
+
+        // активная линия (где курсор)
+        "editorIndentGuide.activeBackground": "#FF9800",
+
+        // дополнительные цвета для глубины (уровней вложенности)
+        "editorIndentGuide.background1": "#3c3c3c",
+        "editorIndentGuide.background2": "#343434",
+        "editorIndentGuide.background3": "#2b2b2b",
+
+        // активные аналоги для разных уровней (опционально)
+        "editorIndentGuide.activeBackground1": "#ffb74d",
+        "editorIndentGuide.activeBackground2": "#ffcc80"
+    }
+}

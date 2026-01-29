@@ -1,26 +1,48 @@
 
-git bash
-> ls -1 ,,, Проверить содержимое.
-> git status ,,, Статус всех файлов в выброной дериктории.
+## git bash
+> ls -1 `Проверить содержимое.`
+> git status `Статус всех файлов в выброной дериктории.`
+-------------------------------------------------
 
-
-,,,# Не отслеживать Файлы с ключами и учётными данными
+-------------------------------------------------
+## gitignore Не отслеживать Файлы с ключами и учётными данными
 creds.json
 secrets.json
 config/secret_config.json
-Parsing-Scraping/creds.json ,,, Не отслеживать файл по данному пити.
-vsCoding_settings/ ,,, Не отслеживать папку.
-vsCoding_settings/vscode_fo_settings.txt ,,, отслеживать только этот файил в папке которое не отслеживает git.
+Parsing-Scraping/creds.json `Не отслеживать файл по данному пити.`
+vsCoding_settings/ `Не отслеживать папку.`
+vsCoding_settings/vscode_fo_settings.txt  `отслеживать только этот файил в папке которое не отслеживает git.`
 
 -------------------------------------------------
 
 
+-------------------------------------------------
+## Команды в терминале для VS Code
+`Настройка имени пользователя для этого репозитория по выбранному пути`
+(.venv) PS D:\Python-Project\git_repositoy\cmd_venv>git config user.name "Vladislav"
+(.venv) PS D:\Python-Project\git_repositoy\cmd_venv>git config user.email "vladislav@mail.ru"
 
+` Настройка имени пользователя для всех репозиториев на этом компьютере.`
+(.venv) PS D:\Python-Project\git_repositoy\cmd_venv>git config --global user.name "Vladislav"
+(.venv) PS D:\Python-Project\git_repositoy\cmd_venv>git config --global user.email "vladislav@mail.ru"
+
+`Выбор версии - получение списка всех версии - для выбора переключение на нужную версию - выход из режима выбора версии клавиша Q `
+> git log --graph --all --oneline
+
+`Команда для перехода выбранной веси - Необходим ноер хеша версии`
+> git checkout 1234567
+
+`Команда для выхода из режима выбора версии`
+> git checkout main
+
+`Команда для удаления файла из истории коммитов`
+> git filter-repo --path Parsing-Sc
+-------------------------------------------------
 
 
 
 -------------------------------------------------
-,,,Вариант 1: Удаление с помощью git filter-repo (рекомендуется) Убедись что установлен git-filter-repo:
+## Вариант 1: Удаление с помощью git filter-repo (рекомендуется) Убедись что установлен git-filter-repo:
 
 
 pip install git-filter-repo

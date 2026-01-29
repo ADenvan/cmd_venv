@@ -7,7 +7,11 @@ Ctrl + Shift + ] / Ctrl + Shift + [ - **сворачивание/развора�
 
 
 ## Как настроить свои горячие клавиши
-Нажми **Ctrl+Shift+P** → введи **Preferences: Open Keyboard Shortcuts (JSON)** → откроется keybindings.json.
+Нажми **Ctrl+Shift+P**
+  → введи **Preferences: Open Keyboard Shortcuts (JSON)**
+    → откроется keybindings.json.
+
+    
 ## Добавь туда нужные сочетания. Например:
 [
   {

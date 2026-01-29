@@ -1,0 +1,27 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+i",
+        "command": "composerMode.agent"
+    },
+    {
+        // Сдвиг курсора на 1 символ в правую сторону
+        "key": "shift+space",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        // Свернуть все функции.
+        "key": "ctrl+q",
+        "command": "editor.foldLevel2",
+        "when": "editorTextFocus"
+    },
+    {
+        // --- Скобки ---
+        // (выделить всё содержимое скобок вместе со скобками)
+        "key": "ctrl+down",
+        "command": "editor.action.selectToBracket",
+        "when": "editorTextFocus"
+    }
+
+]
