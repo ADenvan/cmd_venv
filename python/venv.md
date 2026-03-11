@@ -1,15 +1,15 @@
 # Работа с виртуальным окружением Python (Windows)
 
 ## Изменение переменных среды вручную
-1. Нажать **Win + R** → ввести `sysdm.cpl`
+1. Нажать **Win + R** → ввести sysdm.cpl
 2. Открыть **Переменные среды**
-3. В разделе **Системные переменные** найти переменную `Path`
+3. В разделе **Системные переменные** найти переменную Path
 4. Нажать **Изменить** и выбрать пути для добавления:
-   - `C:\Program Files\Python313\Scripts\`
-   - `C:\Program Files\Python313\`
+   - C:\Program Files\Python313\Scripts\
+   - C:\Program Files\Python313\
 
 ---
-## Проверка Python и пакетов
+## Проверка Python и пакетов 
 
 ```bash
 python --version      # или python -V, версия Python
