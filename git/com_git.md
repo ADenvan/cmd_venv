@@ -60,7 +60,7 @@ git log --oneline # Краткая история
 git log --graph --oneline --all # История с графиком веток
 ```
 
-## - - - 6. Отправка на GitHub
+## - - - 6. Отправка на GitHub через терминал 
 ```bash
 git push origin main # Отправить изменения в удаленный репозиторий
 git push origin master # Или если ветка называется master
