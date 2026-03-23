@@ -30,12 +30,15 @@ def complex_example(data):
 test_data = [x for x in range(20) if (x > 5 and x < 15)]
 print(complex_example(test_data))
 
+
+# Пример с вложенными  
 def example():
     if True:
         for i in range(10):
             print(i)
             if i == 5:
                 print("Found 5!")
+
     return "Done"
 
 # Скобки тоже будут подсвечены
