@@ -1,0 +1,154 @@
+Давай спланируем Вариант Б: Упрощённый (быстрее)
+
+
+"permission": {
+        "edit": "allow",
+        "write": "allow",
+        "bash": {
+          "pytest *": "allow",
+          ".venv/Scripts/python *": "allow",
+          ".venv/Scripts/pip *": "allow",
+          "pip *": "ask",
+          "python *": "ask",
+          "*": "ask"
+        },
+        "task": {
+          "architect": "allow"
+        }
+      }
+Я хочу знать что делает вот Эта ? и где их модно использовать ?
+Меня интересует могу ли я эти инструкции применить .opencode\agent\backend_hybrid.md
+
+
+1) Давай проанализируем это Дебагер агента.
+2) Подключи Архитектора .opencode\agent\architect.md
+И сделаем полный рефакторинг .opencode\agent\debugger.md
+Перепишем полностью под нашу проект. Задача debugger.md подготовить
+
+Давай сделаем скан проекта и на основе скана проекта мы напишем СКИЛЛ debugger. Для создания СКИЛЛА будем использовать .opencode\skills\skill-creator\SKILL.md
+
+
+1.Какие типы багов чаще всего встречаются у вас
+- Расчёты зарплаты (неверные суммы)
+- HTMX (не обновляется часть страницы)
+- Даты/периоды (не применяются ставки)
+2. Какие инструменты уже используете для отладки
+- НЕТ
+- НЕТ
+- НЕТ
+3. Хотите ли включить в скилл автоматическое создание тестов для воспроизведения багов
+- Да хочу.
+Дою добро не забудь использовать .opencode\skills\skill-creator\SKILL.md для создания скилла.
+
+Давай теперь сделаем рефакторинг под-агента .opencode\agent\debugger.md Под наш СКИЛЛ .opencode\skills\django-payroll-debugger\SKILL.md
+1) Под-агент должны быть ссылки на skills\django-payroll-debugger\SKILL.md 2) У под-агента должно быть права запускать Тесты и дебаг режим 3) под-агент должен понимать контекст ошибок и понимать что делать дальше.
+
+1. НЕТ пусть будет edit: deny (read-only)
+2. Да
+3. Да
+
+При нажатие подробно происходит ошибка.
+<td>
+                        <a href="{% url 'employees:employee_detail' employee.id %}" class="btn btn-sm btn-secondary">Подробнее</a>
+                    </td>
+
+Template-loader postmortem
+Django tried loading these templates, in this order:
+
+Using engine django:
+
+django.template.loaders.filesystem.Loader: D:\Python-Project\Django\pay_brother\templates\employees\employee_detail.html (Source does not exist)
+django.template.loaders.app_directories.Loader: D:\Python-Project\Django\pay_brother\.venv\Lib\site-packages\django\contrib\admin\templates\employees\employee_detail.html (Source does not exist)
+django.template.loaders.app_directories.Loader: D:\Python-Project\Django\pay_brother\.venv\Lib\site-packages\django\contrib\auth\templates\employees\employee_detail.html (Source does not exist)
+django.template.loaders.app_directories.Loader: D:\Python-Project\Django\pay_brother\.venv\Lib\site-packages\django_filters\templates\employees\employee_detail.html (Source does not exist)
+django.template.loaders.app_directories.Loader: D:\Python-Project\Django\pay_brother\.venv\Lib\site-packages\import_export\templates\employees\employee_detail.html (Source does not exist)
+django.template.loaders.app_directories.Loader: D:\Python-Project\Django\pay_brother\.venv\Lib\site-packages\auditlog\templates\employees\employee_detail.html (Source does not exist)
+
+
+Ты закончил тестирование или произошла ошибка. Ты закончил разработку ? или  нет ?
+
+Как я должен получить эту информацию не понимаю.
+Дай ссылки на просмотр
+1. Выбирать кого считать — отмечайте галочками нужных сотрудников
+2. Указывать реальные дни — вводите фактически отработанные дни за каждую половину месяца
+3. Видеть результат — система показывает сумму перед сохранением
+4. Считать неполный месяц — больничные, отпуска, прогулы учитываются через уменьшение дней
+
+
+Давай настроим шаблон для всех новых сотрудников http://127.0.0.1:8000/employees/
+ПРИМЕР: у сотрудника http://127.0.0.1:8000/employees/1/
+1) Есть карточка активный договор.
+2) есть Карточка  Последние расчётные листки
+Давай Для новых сотрудников добавим возможность заполнить эти поля http://127.0.0.1:8000/employees/create/
+
+Привет. У меня список друзей долго загружался. А у тебя как ?
+Ну что воришка ПК как тебе Комп ?
+
+После добавление сотрудника сотрудник не отображается в <div class="table-container">
+После редактирование сотрудника сотрудник пропадает из <div class="table-container">
+Давай исправим.
+
+Ясно. Играть будем ?
+Кот Белый Мокрый
+Давай. Ты меня услышишь ?
+
+Привет. Чте-то До вечера не хватило терпение. И собралась Играть.
+
+Вот ссылка на документацию https://opencode.ai/docs/ru/go/
+Вот curl -fsSL https://opencode.ai/install | bash
+Напиши если информации не достаточно.
+
+Напиши точно по шагам что куда нажимать в Settings. Давай попробуем glm-5.1 и api
+
+Напиши нужен ли этому фаилу Описание в виде yaml description: ? Для автоматического загрузки ? Напиши приоритет этих правил ? и в правильно ли папке он находиться ?
+
+C:\Users\ArDen\AppData\Local  делай анализ данный директории. Составь отчет какие из папки больше всего весам. и какие фаилы в папка мы можем там удалить чтобы освободить место на диске.
+
+дою добро на Выполни Очень безопасно (8.8 GB)
+
+
+
+Давай спланируем зарплатный табель сотрудников
+СТЕК: HTML + CSS + javascript + Python 3.13 + Django==5.2
+КОНТЕКСТ:
+Вот такой лист сделаем Копия Зарплата вне склада_2.xlsx
+
+Проанализируй его.
+
+Давай исправим сортировку. Предложим пользователю выбор по Году месяцу. ниже покажим пользователь за выбранный период
+
+1. Хотите ли вы создать Архитектор под-агента?
+   - Да → Я подготовлю prompt для task tool
+2. Какие задачи чаще всего будут возникать
+  - Оптимизация производительности
+3. Нужен ли доступ к другим источникам\
+  - Документация Django
+  - Best practices Python
+
+Дою добро.
+
+
+Давай исправим поиск если ползователь выбрал месяц показать только тот месяц что выбран.
+<header class="topbar" data-cursor-element-id="cursor-el-1" style="">
+        <h1 data-cursor-element-id="cursor-el-4">Зарплатный табель</h1>
+        <form method="get" class="month-filter" data-cursor-element-id="cursor-el-5">
+            <label for="id_payroll_month" data-cursor-element-id="cursor-el-6">Месяц:</label>
+            <select name="payroll_month" id="id_payroll_month" data-cursor-element-id="cursor-el-7">
+  <option value="" selected="" data-cursor-element-id="cursor-el-8">Текущий месяц</option>
+
+  <option value="1" data-cursor-element-id="cursor-el-9">2025-12</option>
+
+</select>
+            <button type="submit" data-cursor-element-id="cursor-el-10">Показать</button>
+        </form>
+
+            <a class="export-link" href="/month/1/export/" data-cursor-element-id="cursor-el-11">Экспорт XLSX</a>
+
+    </header>
+
+Давай продумаем
+Сделай перевод текста в этом файле форма перевода Билингвальный. Текст Русский а технические названия английские.
+
+Давай сделаем скан проекта и сравним с Этим Планом plan.txt. Напиши что есть и что сделано.
+
+<div style="position: fixed; border: 2px solid rgb(58, 150, 221); pointer-events: none; z-index: 2147483647; left: 292px; top: 338.238px; width: 1106.4px; height: 484.75px; display: block;" data-cursor-element-id="cursor-el-304"></div>

@@ -113,10 +113,17 @@ python manage.py dumpdata    # Экспортирует данные в JSON ф�
 D:\Python-Project\Django\storehome_pyhs\storehome> .\manage.py dumpdata goods.Categories > fixtures/goods/cats.json
 ```
 
+----
 - Может быть некорректно отображаться в терминале, если в JSON файле есть кириллица. Для этого используем команду с `Out-File` в PowerShell.
 ```bash
 .\manage.py dumpdata goods.Categories | Out-File -FilePath fixtures/goods/cats.json -Encoding UTF8
 ```
+**Нужно Тестировать**
+```bash
+.\manage.py dumpdata goods.Products --output fixtures/goods/products.json
+```
+---
+
 
 3. Загружаем данные в базу данных
 ```bash

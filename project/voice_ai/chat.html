@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Voice AI Chat</title></head>
+<body>
+<h2>Voice AI Chat</h2>
+<div>
+  Session ID: <input id="sid" value="20260421T165703Z" style="width:300px">
+  <button onclick="connect()">Подключиться</button>
+  <button onclick="ws.close()">Отключиться</button>
+</div>
+<div id="status" style="color:gray">Не подключено</div>
+<hr>
+<div id="messages" style="height:400px;overflow:auto;border:1px solid #ccc;padding:8px"></div>
+<div style="margin-top:8px">
+  <input id="msg" style="width:400px" placeholder="Введите сообщение...">
+  <button onclick="send()">Отправить</button>
+</div>
+<script>
+let ws;
+function addMsg(text, cls) {
+  const d = document.createElement('div');
+  d.className = cls;
+  d.textContent = text;
+  document.getElementById('messages').appendChild(d);
+  document.getElementById('messages').scrollTop = 999999;
+}
+function connect() {
+  const sid = document.getElementById('sid').value;
+  ws = new WebSocket(`ws://localhost:8000/ws/chat/${sid}`);
+  ws.onopen = () => { document.getElementById('status').textContent = 'Подключено ✓'; document.getElementById('status').style.color='green'; };
+  ws.onclose = () => { document.getElementById('status').textContent = 'Отключено'; document.getElementById('status').style.color='red'; };
+  ws.onmessage = (e) => {
+    const data = JSON.parse(e.data);
+    if (data.type === 'assistant_token') addMsg(data.content, 'ai');
+    else if (data.type === 'assistant_done') addMsg('✓ ' + data.content, 'ai-done');
+    else if (data.type === 'generation_cancelled') addMsg('(отменено)', 'sys');
+    else if (data.type === 'error') addMsg('Ошибка: ' + data.message, 'err');
+    else addMsg(JSON.stringify(data), 'sys');
+  };
+}
+function send() {
+  const text = document.getElementById('msg').value.trim();
+  if (!text || !ws) return;
+  addMsg(text, 'user');
+  ws.send(JSON.stringify({type: 'user_text', content: text}));
+  document.getElementById('msg').value = '';
+}
+document.getElementById('msg').addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
+</script>
+<style>
+.user { color: #0066cc; margin: 4px 0; }
+.ai { color: #333; margin: 2px 0; }
+.ai-done { color: green; margin: 4px 0; font-weight: bold; }
+.sys { color: gray; font-style: italic; }
+.err { color: red; }
+</style>
+</body></html>

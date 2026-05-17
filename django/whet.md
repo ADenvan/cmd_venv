@@ -13,6 +13,7 @@ django templates
 Теги
 Конвертеры
 URL-Маршрутизация
+Полнотекстовый поиск
 
 
 Пространство имен
@@ -63,6 +64,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.db.models import Q
 
 # folder views.py
 from django.http import HttpResponse
@@ -74,9 +76,6 @@ from django.apps import AppConfig
 # templatetags
 from django import template
 
-# from django.views.generic import ListView, DetailView
-# from .models import Product
-# from .forms import ProductForm
 
 ```
 # -------------------------------------------

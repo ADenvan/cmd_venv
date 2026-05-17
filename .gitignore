@@ -181,6 +181,7 @@ open_ai/exe_continue.md
 # Токен MCP-server
 hugging_face/token.md
 MCP/exe_run.md
+continue/config.yaml
 # ----------------------------------------------
 # Cursor рисунки для промптов
 # cursor_settings/images

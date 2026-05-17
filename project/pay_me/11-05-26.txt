@@ -1,0 +1,61 @@
+<table class="timesheet-table" id="timesheet-table" data-cursor-element-id="cursor-el-120">
+        <thead data-cursor-element-id="cursor-el-121">
+            <tr data-cursor-element-id="cursor-el-122">
+                <th class="employee-col" rowspan="2" data-cursor-element-id="cursor-el-123">Сотрудник</th>
+                <th rowspan="2" data-cursor-element-id="cursor-el-124">Тип</th>
+                <th rowspan="2" data-cursor-element-id="cursor-el-125">Отдел</th>
+                <th class="period-header" colspan="2" data-cursor-element-id="cursor-el-126">1-15</th>
+                <th class="period-header" colspan="2" data-cursor-element-id="cursor-el-127">16-31</th>
+                <th rowspan="2" data-cursor-element-id="cursor-el-128">Итого</th>
+                <th rowspan="2" data-cursor-element-id="cursor-el-129">Статус</th>
+            </tr>
+            <tr data-cursor-element-id="cursor-el-130">
+                <th data-cursor-element-id="cursor-el-131">Дни</th>
+                <th data-cursor-element-id="cursor-el-132">Часы</th>
+                <th data-cursor-element-id="cursor-el-133">Дни</th>
+                <th data-cursor-element-id="cursor-el-134">Часы</th>
+            </tr>
+        </thead>
+
+</table>
+
+Давай Сделаем Табель который отображает реальные данный из Базы данных также у пользователя должна быть возможность отредактировать данные и сохранить
+Удерем элемент <th rowspan="2" data-cursor-element-id="cursor-el-124">Тип</th> (Тип).
+Добавим элемент в шапку табеля столбец (Оклад, По часовая) оплата сотрудников. в табеле отображаем Оклад для сотрудников или по часовая ставка сотрудника.
+Задай мне уточняющие вопросы если есть сомнения как это сделать.
+
+
+1. Отображение ставки (Оклад/Почасовая)
+Вариант B: Показывать тип + сумму вместе
+2. Расположение колонки
+B: После "Отдела" (перед периодами 1-15)
+3. Редактирование ставки
+Да — добавить input поле для редактирования (изменит Contract)
+4. Сотрудники без контракта
+C: "Нет договора" красным цветом
+5. Данные из базы
+Нет сейчас табель не заполняется автоматически из базы банных ТОЛЬ ВРУЧНУЮ по нажатию кнопки <button type="button" id="fill-all-btn" class="btn btn-secondary" data-cursor-element-id="cursor-el-1">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem;" data-cursor-element-id="cursor-el-117">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" data-cursor-element-id="cursor-el-118"></polygon>
+        </svg>
+        ⚡ Заполнить все рабочими днями
+    </button>
+Также табель создает таблицы на прошлый месяц и 2025 год и сохраняет его в базе данных АВТОМАТИЧЕСКИ это надо исправить и на бедующие месяц тоже необходимо исправить.
+
+
+
+1. Автоматическое создание периодов:
+A: Показывать ошибку "Период не существует" и кнопку "Создать период"
+2. Редактирование ставки:
+При изменении ставки в табеле — менять текущий контракт
+3. Валюта:
+Использовать ₽ (рубли)
+Формат отображения: "50 000"
+4. Права доступа:
+Кто может редактировать ставки? (admin) и (accountant) С правам доступа к редактированию.
+
+Нет отображение данных в шаблоне из БД, давай решим эту проблему запусти MCP playwright и проверь сам. Вот картинка что я жиду
+
+Змей Длинный шнурок
+
+Все еше нет отображение. Может ли быть такое что банные для таблицы заполняться из БД сотрудником а там данных нет вот поэтому и нет отображение. Что делать как исправить может быть удалить данные и сохранить еще раз ? Для корректного отображение ? Сделай сам проверку на PayslipPart есть или нет этих данных.
