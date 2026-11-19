@@ -1,0 +1,17 @@
+
+```json
+"provider": {
+  "lmstudio": {
+    "npm": "@ai-sdk/openai-compatible",
+    "name": "LM Studio (local)",
+    "options": {
+      "baseURL": "http://127.0.0.1:1234/v1"
+    },
+    "models": {
+      "openai/gpt-oss-20b": {
+        "name": "GPT OSS 20B (local)"
+      }
+    }
+  }
+}
+```

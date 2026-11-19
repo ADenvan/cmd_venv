@@ -2,7 +2,7 @@
 
 # Настройка горячих клавиш в VS Code
 Ctrl + Shift + O - **открывает список всех функций/методов (Go to Symbol in File).**
-Ctrl + Shift + ] / Ctrl + Shift + [ - **сворачивание/разворачивание функции/блока кода.**
+Ctrl + Shift + `]` / Ctrl + Shift + `[` **сворачивание / разворачивание функции / блока кода.**
 
 
 
@@ -13,11 +13,13 @@ Ctrl + Shift + ] / Ctrl + Shift + [ - **сворачивание/развора�
 
 
 ## Добавь туда нужные сочетания. Например:
+```json
+
 [
   {
     // (прыжок к парной скобке)
     "key": "ctrl+space",
-    "command": "editor.action.jumpToBracket", # (прыжок к парной скобке)
+    "command": "editor.action.jumpToBracket", // (прыжок к парной скобке)
     "when": "editorTextFocus"
   },
   {
@@ -43,6 +45,7 @@ Ctrl + Shift + ] / Ctrl + Shift + [ - **сворачивание/развора�
     "when": "editorTextFocus"
   }
 ]
+```
 
 
 
@@ -67,7 +70,7 @@ Ctrl + Shift + ] / Ctrl + Shift + [ - **сворачивание/развора�
 ] -->
 
 
-## Не проверины.
+## Не проверены.
 Что это даёт?
 
 ```bash

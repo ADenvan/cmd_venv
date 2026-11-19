@@ -1,3 +1,35 @@
+# skills_sh
+- [[langchain-skills]] - Официальный скилл LangChain 
+- [[python-design-patterns]] - skills для Python от разработчика wshobson (Установка через [[npm-npx]])
+- [[Superpowers Opencode]] - Plugin (Установка через [[npm-npx]])
+	- [[Superpowers-pugin]] - Поисковой промпт
+- [[Graphify Opencode]] - skill для построение Графов (через менеджер пакетов [[UV]]) Желательно Прописать  [[AGENTS-md]]
+	- [[Graphify-Labs]] - Поисковой промпт
+### Итоговая шпаргалка для Windows + OpenCode
+
+| Задача                                              | Команда                                                                                  |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Установить **все** скиллы из репозитория            | `npx skills add <owner/repo> --agent opencode --copy -y`                                 |
+| Установить **один** конкретный скилл                | `npx skills add <owner/repo> --skill <name> --agent opencode --copy -y`                  |
+| Установить **несколько** конкретных скиллов         | `npx skills add <owner/repo> --skill <name1> --skill <name2> --agent opencode --copy -y` |
+| Посмотреть список доступных скиллов (без установки) | `npx skills add <owner/repo> --list`                                                     |
+|                                                     |                                                                                          |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # CliClaw = Agent Bot + memory + api
 - Бот + ии с памятью

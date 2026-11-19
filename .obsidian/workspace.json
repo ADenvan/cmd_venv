@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "7c5b7b74bb97d2ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "13e74da2e2a66b21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f181a23841791f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git/com_git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "com_git"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b526ac0691407fc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cff104c6ab0b25a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b245086f95cbd4d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "5ef71c1d4b202ed7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "d64289180e3091ce",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251.10000610351562
+  },
+  "right": {
+    "id": "00d3d11beff7b230",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8fc315af10ef985",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a6423d7752fcdb0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "vsCode_settings/Extension.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "3b02820b5f3a3e68",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "vsCode_settings/Extension.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки"
+            }
+          },
+          {
+            "id": "785757cb341a7935",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "93b87ac523e3deac",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "aaa59a86f984dd54",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "vsCode_settings/Extension.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "0f181a23841791f3",
+  "lastOpenFiles": [
+    "GitHub/Tree.md",
+    "python/venv.md",
+    "Markdown-Format_.md",
+    "Prompt Engineer/Навыки/Дерево навыков.md",
+    "Obsidian/Ссылки в Obsidian.md",
+    "Prompt Engineer/Шаблоны/Может быть полезны/Синтаксисе PostgreSQL.md",
+    "Obsidian",
+    "Prompt Engineer/Шаблоны/Дерево Шаблоны.md",
+    "Синтаксисе PostgreSQL.md",
+    "Prompt Engineer/Шаблоны/Может быть полезны/Qt UI Engineer.md",
+    "Prompt Engineer/Шаблоны/Может быть полезны/Release Report (Отчет о выпуске).md",
+    "Без названия.canvas",
+    "PostgresSQL/exe.md",
+    "Без названия.base",
+    "SQLTool-sett-VSCode-extend.md",
+    "PostgresSQL/SQLTool-sett-VSCode-extend.jpg",
+    "GitHub/Superpowers Plugin/Superpowers Opencode.md",
+    "GitHub/Graphify/Graphify Opencode.md",
+    "opencode/rodmap/Отчёт_SubAgent_Субаген.md",
+    "opencode/Opencode-json-file/opencode-jsonc.md",
+    "Project Engineer/imports/Дерево Импортов.md",
+    "Project Engineer/Tree.md",
+    "opencode/Opencode-json-file/provider/provider.md",
+    "Project Engineer/imports/Конфиги-Валидация-БД/psycopg2.md",
+    "Project Engineer/imports/Конфиги-Валидация-БД/pydantic.md",
+    "opencode/Opencode-json-file/permission/permission.md",
+    "opencode/Opencode-json-file/provider",
+    "opencode/Opencode-json-file/plugin/plugin.md",
+    "opencode/Дерево.md",
+    "opencode/Opencode-json-file/plugin",
+    "opencode/skill/skill.md",
+    "opencode/Opencode-json-file/mode/mode.md",
+    "opencode/skill",
+    "opencode/Opencode-json-file/mode",
+    "opencode/Opencode-json-file/permission",
+    "opencode/Opencode-json-file",
+    "AGENTS-md/Шаблоны",
+    "AGENTS-md/Заголовки",
+    "cursor_settings/images/Мета-вручную-прописать.jpg",
+    "cursor_settings/images/МетаДанныее.jpg",
+    "django/images/Создание-Класса+Миграция.jpg",
+    "django/images/Обратное-разрешение-URL-адресов_.png",
+    "django/images/Машршрут-django.png",
+    "python/images/Переменную_среду_Python_v.jpg"
+  ]
+}
